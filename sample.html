@@ -18,15 +18,6 @@
   <script src="js/vendor/html5shiv.min.js"></script>
   <script src="js/vendor/respond.min.js"></script>
   <![endif]-->
-  <script>
-    // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    // ga('create', 'UA-######-##', 'auto');
-    // ga('require', 'displayfeatures');
-    // ga('send', 'pageview');
-  </script>
 </head>
 <body class="page-template">
   <!-- The landmark role "banner" is set on this <header> element to indicate that it is the main heading or internal title of the page -->
@@ -51,11 +42,11 @@
         <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav">
             <li class="active dropdown">
-              <a class="dropdown-toggle" id="drop-1" data-toggle="dropdown" href="//www.sugarcrm.com/products/" aria-expanded="false" aria-haspopup="true" role="button">
+              <a class="dropdown-toggle" id="drop-1" data-toggle="dropdown" href="//www.sugarcrm.com/products/" aria-expanded="false" aria-haspopup="true">
                 Products
                 <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu" aria-labelledby="drop-1" role="menu">
+              <ul class="dropdown-menu" aria-hidden="true" aria-labelledby="drop-1" role="presentation">
                 <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Product Overview</a></li>
                 <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Editions &amp; Pricing</a></li>
                 <li role="presentation"><a href="#" role="menuitem" tabindex="-1">Switch to Sugar</a></li>
@@ -125,7 +116,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>CRM Software Packages and Pricing</h1>
+          <h1 class="text-center">CRM Software Packages and Pricing</h1>
           <p class="h3 text-center">With Sugar PurePrice™ you can always count on clear, predictable pricing;<br>
           with no hidden fees or forced upsells to more expensive editions.</p>
           <br>
@@ -136,6 +127,7 @@
           <!-- This <section> uses the ARIA property "labelled-by" to indicate where the section's title is. Its value must match the unique id of the element that contains the <section>'s title -->
           <section class="well" aria-labelledby="well-heading-1">
             <!-- This <article> uses a role of "article" to indicate that this section of the page forms an independent and potentially standalone part of the content. It is recommended to add this role to the <article> element until user agents implement the required role mapping. -->
+            <!-- There may be child <article> elements inside an <article> element. -->
             <article role="article">
               <h3 class="text-center" id="well-heading-1">Sugar<span class="visible-sm-inline"><br></span> Professional</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem magnam, suscipit doloribus voluptas. Magni voluptate quos, accusantium fugiat nostrum non odit nulla quasi est, obcaecati officiis. <a href="#">Sed nulla optio ab</a>.</p>
@@ -180,39 +172,8 @@
             <hr class="visible-xs-block visible-sm-block">
             <button class="btn btn-cta-3 btn-lg" type="button">Watch the Demo</button>
           </div>
-          <div class="h1">Lorem ipsum <small style="text-transform: lowercase;">&lt;div class="h1" /&gt; <!-- 36px/45px --></small></div>
-          <h2>Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;h2 /&gt; <!-- 30px/33px --></small></h2>
-          <div class="h2">Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;div class="h2" /&gt; <!-- 30px/33px --></small></div>
-          <h3>Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;h3 /&gt; <!-- 24px/26.4px --></small></h3>
-          <div class="h3">Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;div class="h3" /&gt; <!-- 24px/26.4px --></small></div>
-          <h4>Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;h4 /&gt; <!-- 18px/19.8px --></small></h4>
-          <div class="h4">Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;div class="h4" /&gt; <!-- 18px/19.8px --></small></div>
-          <h5>Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;h5 /&gt; <!-- 16px/17.6px --></small></h5>
-          <div class="h5">Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;div class="h5" /&gt; <!-- 16px/17.6px --></small></div>
-          <h6>Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;h6 /&gt; <!-- 12px/13.2px --></small></h6>
-          <div class="h6">Lorem ipsum dolor sit amet <small style="text-transform: lowercase;">&lt;div class="h6" /&gt; <!-- 12px/13.2px --></small></div>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quasi, quia maxime obcaecati optio officia, nulla soluta, quas vero quam numquam porro dolor, sequi laboriosam. Enim, alias suscipit animi tenetur. <small>&lt;p class="lead"/&gt; <!-- 21px/29.4px --></small></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ducimus dolor esse distinctio velit itaque saepe, eum, delectus voluptas quae fugit perspiciatis optio modi ut placeat maiores <a href="#">aspernatur qui voluptatibus</a>. <small>&lt;p /&gt; <!-- 14px/20px --></small></p>
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ducimus dolor esse distinctio velit itaque saepe, eum, delectus voluptas quae fugit perspiciatis optio modi ut placeat maiores <a href="#">aspernatur qui voluptatibus</a>. <small>&lt;blockquote /&gt; <!-- 14px/20px --></small></blockquote>
-          <address></address>
-          <dd></dd>
-          <dl></dl>
-          <figcaption></figcaption>
-          <figure></figure>
-          <hr class="hr-thick"><span><small>&lt;hr class="hr-thick" /&gt;</small></span>
-          <hr class="hr-danger"><span><small>&lt;hr class="hr-danger" /&gt;</small></span>
-          <hr class="hr-thick hr-danger"><span><small>&lt;hr class="hr-thick hr-danger" /&gt;</small></span>
-          <hr><span><small>&lt;hr /&gt;</small></span>
-          <ol>
-            <li>One <small>&lt;ol /&gt; <!-- 14px/20px --></small></li>
-            <li>Two</li>
-            <li>Three</li>
-          </ol>
-          <ul>
-            <li>One <small>&lt;ul /&gt; <!-- 14px/20px --></small></li>
-            <li>Two</li>
-            <li>Three</li>
-          </ul>
+          <br>
+          <br>
         </div>
       </div>
     </div>

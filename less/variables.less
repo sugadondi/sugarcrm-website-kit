@@ -50,13 +50,21 @@
 @color-malibu: #5bc0de;
 @color-fern: #5cb85c;
 @color-curiousblue: #337ab7;
+// @color-sugar-carbon: #59595c;
 @color-sugar-carbon: @color-mineshaft;
+// @color-sugar-red: #e61718;
 @color-sugar-red: @color-lust;
+// @color-sugar-steel: #e6e7e8;
 @color-sugar-steel: @color-iron;
+// @color-sugar-violet: #1f12b3;
 @color-sugar-violet: @color-sapphire;
+// @color-sugar-teal: #0d806c;
 @color-sugar-teal: @color-puertorico;
+// @color-sugar-green: #33800d;
 @color-sugar-green: @color-chateaugreen;
+// @color-sugar-lime: #6a800d;
 @color-sugar-lime: @color-laspalmas;
+// @color-sugar-orange: #cc3314;
 @color-sugar-orange: @color-flamingo;
 
 //== Colors
@@ -70,11 +78,16 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777 | @color-monsoon;
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee | @color-white2;
 
-@brand-primary:         darken(@color-celestialblue, 6.5%); // #337ab7 | @color-valencia;
-@brand-success:         @color-fern;
-@brand-info:            @color-malibu;
-@brand-warning:         @color-casablanca;
-@brand-danger:          @color-valencia;
+// @brand-primary:         darken(@color-celestialblue, 6.5%); // #337ab7 | @color-valencia;
+@brand-primary: @color-sugar-carbon;
+// @brand-success:         @color-fern;
+@brand-success: @color-sugar-green;
+// @brand-info:            @color-malibu;
+@brand-info: @color-sugar-lime;
+// @brand-warning:         @color-casablanca;
+@brand-warning: @color-sugar-orange;
+// @brand-danger:          @color-valencia;
+@brand-danger: @color-sugar-red;
 
 
 //== Scaffolding
@@ -543,19 +556,23 @@
 //## Define colors for form feedback states and, by default, alerts.
 
 @state-success-text:             @color-killarney;
-@state-success-bg:               @color-hontofgreen;
+// @state-success-bg:               @color-hontofgreen;
+@state-success-bg:               lighten(@brand-success, 28%);
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
 @state-info-text:                @color-calypso;
-@state-info-bg:                  @color-linkwater;
+// @state-info-bg:                  @color-linkwater;
+@state-info-bg:                  lighten(@brand-info, 28%);
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 @state-warning-text:             @color-mckenzie;
-@state-warning-bg:               @color-solitaire;
+// @state-warning-bg:               @color-solitaire;
+@state-warning-bg:               lighten(@brand-warning, 28%);
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
 @state-danger-text:              @color-roofterracotta;
-@state-danger-bg:                @color-softpeach;
+// @state-danger-bg:                @color-softpeach;
+@state-danger-bg:                lighten(@brand-danger, 28%);
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
